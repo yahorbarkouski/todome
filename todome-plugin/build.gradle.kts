@@ -1,6 +1,10 @@
 plugins {
     `java-gradle-plugin`
+    id("com.gradle.plugin-publish") version "1.2.0"
 }
+
+version = "1.0.0"
+group = "com.yahorbarkouski.todome"
 
 repositories {
     mavenCentral()
@@ -11,9 +15,18 @@ dependencies {
 }
 
 gradlePlugin {
+    website.set("https://github.com/yahorbarkouski/todome")
+    vcsUrl.set("https://github.com/yahorbarkouski/todome")
     val todome by plugins.creating {
         id = "com.yahorbarkouski.todome"
         implementationClass = "com.yahorbarkouski.todome.ToDoMePlugin"
+        displayName = "ToDoMe Plugin"
+        description = """
+            Gradle plugin for those who mean business. No more optional TODOs. No more forgotten tasks. 
+            ToDoMe enforces due dates on every TODO and fails your build if you miss them. Code with conviction. 
+            Meet your deadlines. Keep your promises.
+        """.trimIndent()
+        tags.set(listOf("todo", "java", "kotlin", "groovy", "linter", ))
     }
 }
 
