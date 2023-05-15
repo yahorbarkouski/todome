@@ -1,5 +1,6 @@
 package com.yahorbarkouski.todome;
 
+import com.yahorbarkouski.todome.task.AbstractTodoTask;
 import org.gradle.testfixtures.ProjectBuilder;
 import org.gradle.api.Project;
 import org.junit.Test;
@@ -18,11 +19,12 @@ public class ToDoMePluginTest {
         project.getPlugins().apply("com.yahorbarkouski.todome");
 
         assertNotNull(project.getTasks().findByName("verifyTodos"));
+        assertNotNull(project.getTasks().findByName("listTodos"));
     }
 
     @Test
     public void todoPatternApplicable() {
-        Pattern todoPattern = VerifyTodosTask.todoPattern;
+        Pattern todoPattern = AbstractTodoTask.todoPattern;
         // Single line TODO comment with newline
         Matcher matcher1 = todoPattern.matcher("// TODO: fix this\n");
         assertTrue(matcher1.find());

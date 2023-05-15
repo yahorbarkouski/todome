@@ -3,7 +3,7 @@ plugins {
     id("com.gradle.plugin-publish") version "1.2.0"
 }
 
-version = "1.0.1"
+version = "1.0.2"
 group = "com.yahorbarkouski.todome"
 
 repositories {
@@ -26,7 +26,7 @@ gradlePlugin {
             ToDoMe enforces due dates on every TODO and fails your build if you miss them. Code with conviction. 
             Meet your deadlines. Keep your promises.
         """.trimIndent()
-        tags.set(listOf("todo", "java", "kotlin", "groovy", "linter", ))
+        tags.set(listOf("todo", "java", "kotlin", "groovy", "linter", "lint"))
     }
 }
 
