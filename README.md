@@ -3,7 +3,7 @@
 
 STOP LOOSING YOUR TODOS. MAKE A COMMITMENT TO QUALITY, DILIGENCE, AND FOLLOW-THROUGH. TODOs ARE NO LONGER OPTIONAL. THEY'RE NO LONGER SOMETHING TO FORGET. THEY'RE HERE, THEY'RE NOW, AND THEY'RE YOUR RESPONSIBILITY.
 
-![listTodos.gif](img/verifyTodos.gif)
+![verifyTodos.gif](img/verifyTodos.gif)
 
 ## How It Works
 
@@ -46,16 +46,20 @@ Run the `verifyTodos` task to check your code for TODOs without due dates. If an
 ./gradlew verifyTodos
 ```
 
+\
 List your TODOs, filtered by assignee and sorted by due date using the listTodos task. You can specify an assignee and sort order as command line properties. If not, the default assignee is "all" and the default sort order is "desc".
 ```bash
 ./gradlew listTodos -Passignee=yahor -Psort=asc
 ```
 ![listTodos.gif](img/listTodos.gif)
 
+\
 To check overdue TODOs, use the `listTodos` task with `-Poverdue=true` flag. The task will fail, if there are any overdue TODOs, so either do them or get ready to be ashamed in code review.
 ```bash
 ./gradlew listTodos -Passignee=yahor -Poverdue=true
 ```
+![overdueTodo.gif](img/overdueTodo.gif)
+
 
 ## REMEMBER
 
