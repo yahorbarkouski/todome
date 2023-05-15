@@ -1,4 +1,4 @@
-# ToDoMe: Your No-Nonsense, Get-It-Done Gradle Plugin
+# ToDoMe: Do Your ToDo Gradle Plugin
 [![Build Status](https://github.com/yahorbarkouski/todome/workflows/Build%20Project/badge.svg)](https://github.com/yahorbarkouski/todome/actions)
 
 ## Purpose
