@@ -19,13 +19,13 @@ In addition, ToDoMe can list all your TODOs, filtered by assignee and sorted by 
 Include the following to your build.gradle:
 ```groovy
 plugins {
-    id 'com.yahorbarkouski.todome' version '1.0.3'
+    id 'com.yahorbarkouski.todome' version '1.0.2'
 }
 ```
 Or if you're using kotlin DSL:
 ```kotlin
 plugins {
-    id("com.yahorbarkouski.todome") version "1.0.3"
+    id("com.yahorbarkouski.todome") version "1.0.2"
 }
 ```
 
