@@ -3,7 +3,7 @@ plugins {
     id("com.gradle.plugin-publish") version "1.2.0"
 }
 
-version = "1.0.2"
+version = "1.0.3"
 group = "com.yahorbarkouski.todome"
 
 repositories {
