@@ -1,5 +1,5 @@
 # ToDoMe: Your No-Nonsense, Get-It-Done Gradle Plugin
-[![Build Status](https://github.com/yahorbarkouski/todome/workflows/Java%20CI%20with%20Gradle/badge.svg)](https://github.com/yahorbarkouski/todome/actions)
+[![Build Status](https://github.com/yahorbarkouski/todome/workflows/Build%20Project/badge.svg)](https://github.com/yahorbarkouski/todome/actions)
 
 ## Purpose
 
