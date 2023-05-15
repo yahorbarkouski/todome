@@ -4,6 +4,7 @@ import com.yahorbarkouski.todome.model.TodoModel;
 import org.gradle.api.tasks.TaskAction;
 
 import java.io.File;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -19,6 +20,9 @@ public class ListTodosTask extends AbstractTodoTask {
             : null;
     private final boolean dueDateAscending = getProject().hasProperty("sort") &&
             Objects.equals(getProject().property("sort"), "asc");
+
+    private final boolean overdue = getProject().hasProperty("overdue") &&
+            Objects.equals(getProject().property("overdue"), "true");
 
     /**
      * Extracts a list of todos from the project's root directory and filters them according to a defined predicate.
@@ -53,8 +57,16 @@ public class ListTodosTask extends AbstractTodoTask {
             Collections.reverse(sortedTodos);
         }
 
+        if (overdue) {
+            sortedTodos.removeIf(todo -> Objects.requireNonNull(todo.getDueDate()).isAfter(LocalDate.now()));
+        }
+
         for (TodoModel todo : sortedTodos) {
             logger.lifecycle(formatted(todo));
+        }
+
+        if (overdue && !sortedTodos.isEmpty()) {
+            throw new IllegalStateException("Found TODOs with due dates in the past. TIME TO SOLVE IT!");
         }
     }
 

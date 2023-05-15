@@ -52,6 +52,10 @@ List your TODOs, filtered by assignee and sorted by due date using the listTodos
 ```
 ![listTodos.gif](img/listTodos.gif)
 
+To check overdue TODOs, use the `listTodos` task with `-Poverdue=true` flag. The task will fail, if there are any overdue TODOs, so either do them or get ready to be ashamed in code review.
+```bash
+./gradlew listTodos -Passignee=yahor -Poverdue=true
+```
 
 ## REMEMBER
 
