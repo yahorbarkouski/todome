@@ -1,13 +1,9 @@
 # ToDoMe: Your No-Nonsense, Get-It-Done Gradle Plugin
-## Introduction
-
-Welcome to ToDoMe, your new conscience in the coding world. This Gradle plugin has been forged in the fires of countless forgotten TODOs and is here to ensure that no TODO is left behind.
-
-![listTodos.gif](img/verifyTodos.gif)
-
 ## Purpose
 
-With ToDoMe, you're making a commitment to quality, diligence, and follow-through. TODOs are no longer optional. They're no longer something for the future. They're here, they're now, and they're your top priority. 
+STOP LOOSING YOUR TODOS. MAKE A COMMITMENT TO QUALITY, DILIGENCE, AND FOLLOW-THROUGH. TODOs ARE NO LONGER OPTIONAL. THEY'RE NO LONGER SOMETHING TO FORGET. THEY'RE HERE, THEY'RE NOW, AND THEY'RE YOUR RESPONSIBILITY.
+
+![listTodos.gif](img/verifyTodos.gif)
 
 ## How It Works
 
@@ -57,6 +53,6 @@ List your TODOs, filtered by assignee and sorted by due date using the listTodos
 ![listTodos.gif](img/listTodos.gif)
 
 
-## Remember
+## REMEMBER
 
 Every TODO is a promise. A promise to your code, to your users, and to yourself. With ToDoMe, you're going to keep those promises. So, roll up your sleeves, buckle down, and get to work. Your TODOs are waiting.
