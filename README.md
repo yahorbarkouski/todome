@@ -1,5 +1,6 @@
 # ToDoMe: Do Your ToDo Gradle Plugin
 [![Build Status](https://github.com/yahorbarkouski/todome/workflows/Build%20Project/badge.svg)](https://github.com/yahorbarkouski/todome/actions)
+[![Latest Version](https://img.shields.io/maven-metadata/v/https/plugins.gradle.org/m2/com/yahorbarkouski/todome/todome-plugin/maven-metadata.xml?label=gradle)](https://plugins.gradle.org/plugin/com.yahorbarkouski.todome)
 
 ## Purpose
 
